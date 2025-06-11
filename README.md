@@ -35,41 +35,6 @@ int main() {
 
 ---
 
-## ⚙️ 2. PBDS (Policy-Based Data Structures)
-
-**Definition**: A C++ STL extension from `__gnu_pbds` which allows ordered sets and multisets with additional operations like finding kth element and rank.
-
-### 📦 Requires:
-
-```cpp
-#include <ext/pb_ds/assoc_container.hpp>
-using namespace __gnu_pbds;
-template<typename T>
-using pb_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
-```
-
-### ✨ Example
-
-```cpp
-#include <bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp>
-using namespace __gnu_pbds;
-using namespace std;
-
-template<typename T>
-using pb_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
-
-int main() {
-    pb_set<int> s;
-    s.insert(10);
-    s.insert(20);
-    s.insert(30);
-
-    cout << *s.find_by_order(1) << endl; // 20
-    cout << s.order_of_key(25) << endl;  // 2
-}
-```
-
 ---
 
 ## 🌐 3. BFS (Breadth-First Search)
@@ -175,7 +140,3 @@ struct DSU {
 Feel free to fork and contribute more snippets!
 
 ---
-
-## 📄 License
-
-MIT License
