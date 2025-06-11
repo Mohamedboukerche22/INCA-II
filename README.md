@@ -35,8 +35,6 @@ int main() {
 
 ---
 
----
-
 ## 🌐 3. BFS (Breadth-First Search)
 
 **Definition**: BFS is a graph traversal algorithm that explores all neighbors at the current depth before moving deeper.
