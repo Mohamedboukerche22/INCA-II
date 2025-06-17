@@ -1,3 +1,4 @@
+// O(n**2) time complexity btw slow 
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
